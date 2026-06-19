@@ -67,13 +67,9 @@ Then authenticate with your organization key:
 sonar auth login -o <your-organization-key-here>
 ```
 
-![][image7]
-
 The subsequent `sonar auth login` flow opens your browser, runs OAuth, and stores the resulting token in your system keychain. Every downstream command (including the MCP server and hook scripts) reuses that session.
 
-When the browser opens, click **Allow connection** and confirm that the authentication succeeded:  
-![][image8]  
-![][image9]
+When the browser opens, click **Allow connection** and confirm that the authentication succeeded.  
 
 Inform Cursor once you’ve authenticated for confirmation that the integration is ready.
 
