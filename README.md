@@ -22,7 +22,7 @@ This blueprint configures the [SonarQube plugin](https://github.com/SonarSource/
 
 ## Architecture
 
-![][image1]
+![Architecture diagram](screenshots/cursor-plugin-architecture.png)
 
 The SonarQube plugin contributes everything Cursor needs to talk to SonarQube: the SonarQube MCP server, the `sonar-*` skill set, three secrets-scanning hooks, an Agentic Analysis Cursor rule, and a Context Augmentation skill. The plugin's `sonar-integrate` setup command writes those artifacts into your project's `.cursor/` directory and the Context Augmentation skill into `.agents/skills/`. Under the hood, the SonarQube CLI is the runtime; the MCP server runs as the mcp/sonarqube container, launched by `sonar run mcp`, every hook script shells out to `sonar hook cursor-*`, the Agentic Analysis loop calls `sonar analyze agentic`, and Context Augmentation calls `sonar context guidelines get`.
 
