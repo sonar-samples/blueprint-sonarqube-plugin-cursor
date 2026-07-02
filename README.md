@@ -1,5 +1,7 @@
 # Set up the SonarQube plugin for Cursor
 
+> Last verified: June 2026
+
 ## TL;DR overview
 
 - The SonarQube plugin for Cursor brings issue scanning, quality gate checks, code coverage, dependency risks, secrets scanning, Agentic Analysis, and Context Augmentation into Cursor through dedicated `sonar-*` skills, the SonarQube MCP Server, and a `sonar-integrate` setup command that installs the plugin's hooks and rules.  
